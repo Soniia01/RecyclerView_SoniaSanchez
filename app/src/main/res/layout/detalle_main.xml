@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.detail.DetallesMain"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="219dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/idValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.165"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.346" />
+
+    <RatingBar
+        android:id="@+id/ratingValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:min="0"
+        android:max="5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.863" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="409dp"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ratingValue" />
+
+    <SeekBar
+        android:id="@+id/crunchValue"
+        android:layout_width="181dp"
+        android:layout_height="48dp"
+        android:max="5"
+        android:min="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/radioGroup2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <EditText
+        android:id="@+id/nameValue"
+        android:layout_width="179dp"
+        android:layout_height="54dp"
+        android:background="#F4F4F4"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.517"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="202dp"
+        android:layout_height="159dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/crunchLabel"
+        app:layout_constraintHorizontal_bias="0.423"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.538"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/radioTrigo"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Trigo" />
+
+        <RadioButton
+            android:id="@+id/radioAvena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/Avena" />
+
+        <RadioButton
+            android:id="@+id/radioCenteno"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:text="@string/Centeno" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/typeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TYPE"
+        app:layout_constraintBottom_toTopOf="@+id/radioGroup2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.996" />
+
+    <TextView
+        android:id="@+id/textureLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Texture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.509"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.665" />
+
+    <TextView
+        android:id="@+id/crunchLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Crunch"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.481" />
+
+    <EditText
+        android:id="@+id/textureValue"
+        android:layout_width="340dp"
+        android:layout_height="59dp"
+        android:background="#F4F4F4"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.75" />
+
+    <TextView
+        android:id="@+id/ratingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Rating"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.79" />
+
+    <Button
+        android:id="@+id/add"
+        android:layout_width="83dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="36dp"
+        android:backgroundTint="#C5C5C5"
+        android:text="@string/ADD"
+        android:textAllCaps="true"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/delete"
+        app:layout_constraintHorizontal_bias="0.444"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="83dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#C5C5C5"
+        android:text="@string/DELETE"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:iconTint="#E1E1E1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986" />
+
+    <Button
+        android:id="@+id/update"
+        android:layout_width="83dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="36dp"
+        android:backgroundTint="#C5C5C5"
+        android:text="@string/UPDATE"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        app:iconTint="#E1E1E1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toEndOf="@+id/delete"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.986" />
+</androidx.constraintlayout.widget.ConstraintLayout>

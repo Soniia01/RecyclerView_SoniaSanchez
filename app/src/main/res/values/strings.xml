@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">RecyclerView_SoniaSanchez</string>
+    <string name="detalles">Detalles</string>
+    <string name="DELETE">DEL</string>
+    <string name="noelementos">no hay suficientes elementos</string>
+    <string name="radiobutton">RadioButton</string>
+    <string name="next" translatable="false">next</string>
+    <string name="previous" translatable="false">previous\n</string>
+    <string name="ADD">ADD</string>
+    <string name="UPDATE">UPD</string>
+    <string name="Centeno">Centeno</string>
+    <string name="Avena">Avena</string>
+    <string name="Trigo">Trigo</string>
+    <string name="TYPE">Type:</string>
+    <string name="Crunch">Crunchyness:</string>
+    <string name="Texture">Texture:</string>
+    <string name="Rating">Rating:</string>
+</resources>
